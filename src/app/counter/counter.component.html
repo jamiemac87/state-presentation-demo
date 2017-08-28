@@ -1,0 +1,17 @@
+<div class="ui top attached segment">
+  <h2>Count = {{ counter$ | async }}</h2>
+</div>
+
+<div class="ui bottom attached menu">
+  <div class="item">
+    <div class="ui blue button" (click)="increment()">Increment</div>
+  </div>
+
+  <div class="item">
+    <div class="ui basic red button" (click)="decrement()">Decrement</div>
+  </div>
+
+  <div class="item">
+    <div class="ui basic button" (click)="reset()">Reset</div>
+  </div>
+</div>
