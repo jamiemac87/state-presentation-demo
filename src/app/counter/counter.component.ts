@@ -13,18 +13,13 @@ export class CounterComponent {
   counter$: Observable<number>;
 
   constructor(private store: Store<AppState>) {
+    // Here we tell the store that we want to watch the value/s returned from the getCounterValue
     this.counter$ = this.store.select(getCounterValue);
   }
 
-  increment(): void {
-    this.store.dispatch(new IncrementAction());
-  }
+  increment(): void {}
 
-  decrement(): void {
-    this.store.dispatch(new DecrementAction());
-  }
+  decrement(): void {}
 
-  reset(): void {
-    this.store.dispatch(new ResetAction());
-  }
+  reset(): void {}
 }

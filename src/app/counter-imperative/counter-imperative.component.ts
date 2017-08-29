@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class CounterImperativeComponent {
   counter: number;
 
-  constructor() { 
+  constructor() {
     this.counter = 0;
   }
 
