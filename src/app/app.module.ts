@@ -6,11 +6,13 @@ import { StoreModule } from '@ngrx/store';
 import { CounterComponent } from './counter/counter.component';
 import { reducers } from './reducers/index';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
+import { CounterImperativeComponent } from './counter-imperative/counter-imperative.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CounterComponent,
+    CounterImperativeComponent,
   ],
   imports: [
     CommonModule,
